@@ -1,0 +1,8 @@
+[{<<"esha3">>,
+  {git,"https://github.com/cleverfox/esha3.git",
+       {ref,"12418aa70ffee1ea77aeda5277a2a426d32aa90c"}},
+  0},
+ {<<"jsx">>,
+  {git,"https://github.com/cleverfox/jsx.git",
+       {ref,"24033b616a72358e464bf3866262b03ade91b000"}},
+  0}].

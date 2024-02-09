@@ -1,0 +1,16 @@
+{application, eevm_abi,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    esha3,
+    jsx,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, [contract_evm_abi,contract_evm_abi_parser]},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
