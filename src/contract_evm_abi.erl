@@ -420,8 +420,7 @@ parse_signature(String,RetString) when is_list(String), is_list(RetString) ->
   B=syntax_scan(String),
   case contract_evm_abi_parser:parse(B) of
     {ok,{Name,R}} when is_atom(Name) ->
-      {_,C,_}=erl_scan:string(RetString),
-      case contract_evm_abi_parser:parse(C) of
+      case contract_evm_abi_parser:parse(syntax_scan(RetString)) of
         {ok,{_,R2}} ->
           {ok,{{function, atom_to_binary(Name)}, R, R2}};
         {error, Err} ->
